@@ -6,7 +6,7 @@ $EnvironmentName = "Env1"
 $Region = "Region"
 $Hostname = "Host"
 
-$TargetConfig = (Join-Path $ENV:ProgramData 'Datadog/conf.d/windows_service.d/conf.yaml')
+$TargetConfig = (Join-Path $ENV:ProgramData 'Datadog/datadog.yaml')
 $Services = [pscustomobject]@{
     'instances' = @(
         [ordered]@{
