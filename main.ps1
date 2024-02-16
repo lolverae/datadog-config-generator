@@ -11,10 +11,10 @@ function Create-DataDogConfig {
         [string]$Hostname,
         [string]$TeamName,
         [string]$AssetID,
-        [string]$ServerType,
-        [string]$EnvType,
-        [string]$EnvironmentName,
-        [string]$Region
+        [string[]]$ServerTypes,
+        [string[]]$EnvTypes,
+        [string[]]$Regions,
+        [string]$EnvironmentName
     )
 
     $TargetConfig = Join-Path $env:ProgramData 'Datadog/datadog.yaml'
