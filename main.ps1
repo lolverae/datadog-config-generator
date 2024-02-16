@@ -1,10 +1,10 @@
 $AssetID = "123"
-$ServerType = "WebServer"
 $TeamName = "Team1"
-$EnvType = "NonProd"
 $EnvironmentName = "Env1"
-$Region = "Region"
 $Hostname = "Host"
+$ServerTypes = @("WebServer1", "WebServer2", "WebServer3")
+$EnvTypes = @("NonProd", "Prod", "Test")
+$Regions = @("Region1", "Region2", "Region3")
 
 $TargetConfig = (Join-Path $ENV:ProgramData 'Datadog/datadog.yaml')
 $Services = [pscustomobject]@{
